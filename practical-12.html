@@ -18,9 +18,9 @@
             margin-left: auto;
             margin-right: auto;
             margin-top: 20px;
-            /* text-align: center; */
         }
 
+        /* for removing borders in table */
         table, tr, td{
             border-collapse: collapse;
         }
@@ -49,11 +49,14 @@
             width: 120px;
             border-radius: 5px;
             background-color: #0F4C75;
-            color: white;
             display: flex;
             justify-content: center;
             align-items: center;
             font-size: 130%;
+        }
+        tr:nth-child(13) td p a {
+            text-decoration: none;
+            color: white;
         }
 
         td {
@@ -160,10 +163,10 @@
                 <td><img src="images\icon-check.png"></td>
             </tr>
             <tr>
-                <td><p>Sign Up</p></td>
-                <td><p>Sign Up</p></td>
-                <td><p>Sign Up</p></td>
-                <td><p>Sign Up</p></td>
+                <td><p><a href="#">Sign Up</a></p></td>
+                <td><p><a href="#">Sign Up</a></p></td>
+                <td><p><a href="#">Sign Up</a></p></td>
+                <td><p><a href="#">Sign Up</a></p></td>
             </tr>
         </table>
     </div>
