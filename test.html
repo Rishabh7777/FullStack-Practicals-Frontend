@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <style>
+        p:nth-child(even) {
+            color: red;
+        }
+        p:empty {
+            height: 300px;
+            width: 300px;
+            background-color: chartreuse;
+        }
+        p:only-child {
+            color: green;
+        }
+        p:nth-child(1)::first-letter {
+            font-size: 200%;
+        }
+        p:last-child::before {
+            font-family: "FontAwesome";
+            content: '\f058';
+            margin-right: 5px;
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <p>This is a paragraph</p>
+        <p></p>
+        <p>This is a paragraph</p>
+        <p>This is a paragraph</p>
+        <div>
+            <p>This is a paragraph</p>
+        </div>
+    </div>
+</body>
+</html>
